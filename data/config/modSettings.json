@@ -1,0 +1,20 @@
+{
+    "voidtec": {
+        "enablePlayerAugmentBattleDamage": false,
+        "alwaysExpandTooltips": true,
+        
+        # Modifies the min and max ranges for a stat roll. Default 1.0. Set to 0 to make stats always the average of the min and max values.
+        "statRollRangeModifier": 0.4,
+
+        # Recover-Chance -> Destroy-Chance -> Damage-Chance
+        "recoverChance": 70,
+        "destroyChanceOnRecover": 50,
+        "damageChanceOnRecover": 60,
+
+        "enableChangeSlotButton": true,
+        "basePartAmount": 5,
+        "basicRepairModifier": 1.0,
+        "primaryRepairModifier": 1.0,
+        "secondaryRepairModifier": 0.5,   
+    }
+}

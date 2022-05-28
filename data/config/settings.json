@@ -1,0 +1,9 @@
+{
+	# vanilla
+	"idleWhileWindowNotVisible": false,
+	"altMouseMoveToMassTransfer": true,
+    "campaignSpeedupMult": 2, # Transponder Off sets it to 3, which is just too fast.
+
+	# stelnet
+	"stelnetWarnAboutEndOfMonth": false
+}

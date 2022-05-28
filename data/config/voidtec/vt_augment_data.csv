@@ -1,0 +1,36 @@
+augmentID,manufacturer,name,description,rarity,primarySlot,primaryStatMods,primaryStatValues,secondarySlots,secondaryStatMods,secondaryStatValues,uniqueMod,allowedAugmentQualities,equalQualityRoll,incompatibleWith,allowedFactions,forbiddenFactions,tags,additionalDescription,beforeCreationScript,afterCreationScript,combatScript,rightClickScript
+vt_wisp_driveFieldReinforcement,Independent,Drive Field Reinforcement,Increases burn level by strengthening the drive field.,20,ENGINE,BURN_LEVEL,"2, 2, false, false",,,,,,,,,,,,,,,
+vt_engineRecolor,VoidTec,Custom Plume Colorizer,"Want to impress your opposing fleet commander? Try the all new '==Exhaust Colorizer==' for your ship and make him think about all the wrong decisions he made when fitting his ship, only to get vaporized by a Reaper-Torpedo mere seconds later.""",1,COSMETIC,,,,,,,,,,,,,Makes your engine flames change to your ==specified color==.,,,de.schafunschaf.voidtec.combat.scripts.fx.EngineRecolorEffect,de.schafunschaf.voidtec.util.ui.plugins.colorpicker.OpenColorPickerAction
+vt_rainbowEngines,VoidTec,Rainbow Engines,Bored of those static and dull engine flames? Try the all new '==Rainbow Fuel Addition==' for your ship and kiss those boring exhausts goodbye!,1,COSMETIC,,,,,,,,,,,,,Makes your engine flames change color over time.,,,de.schafunschaf.voidtec.combat.scripts.fx.RainbowEngineEffect,
+vt_rainbowShields,VoidTec,Rainbow Shields,Bored of always looking at that static and dull barrier in front of your ship? Try the all new '==Rainbow Crystal Shield Matrix==' and kiss those boring visuals goodbye!,1,COSMETIC,,,,,,,,,,,,,Makes your shield change color over time.,,,de.schafunschaf.voidtec.combat.scripts.fx.RainbowShieldEffect,
+vt_reactorOverdrive,Diktat,Reactor Overdrive,Removes '==unnecessary==' safety locks from the ships flux grid. This will put the reactor under more stress in exchange for a higher flux throughput.,40,REACTOR,"FLUX_DISSIPATION, VENT_RATE, CR_PEAK","20, 40 ,true, false | 10, 25, true, false | -15, -20, true, false",SYSTEM,"SYSTEM_REGEN, SYSTEM_COOLDOWN, OVERLOAD_DURATION","10, 20, true, false | -10, -20, true, false | 15, 30, false, false",,,,,,,,,,,,
+vt_improvedCapacitor,"Tritachyon, HCorK",Improved Capacitors,Increases the damage output of energy based weapons.,60,WEAPON,ENERGY_DAMAGE,"10, 20, true, false",REACTOR,"FLUX_CAPACITY, EMP_DAMAGE_TAKEN","10, 20, true, false | -10, -15, true, false",,,,,,,,,,,,
+vt_temporalAccelerator,"Tritachyon, HCoK",Temporal Accelerator,"Generates a temporal field inside the ship, accelerating time flow on board.",15,SYSTEM,"TIME_MULT, CR_LOSS","3, 7.5, true, false | 15, 30, false, false",WEAPON,"BALLISTIC_ROF, ENERGY_ROF, MISSILE_ROF, WEAPON_HEALTH","7.5, 15, true, false | 7.5, 15, true, false | 7.5, 15, true, false | -30, -60, false, false",,,,,,,,,,,,
+vt_modulatingShield,"Tritachyon, HCoK",Modulating Shield Emitters,Reduces the overall damage taken by shields.,65,SHIELD,"SHIELD_ABSORPTION, SHIELD_UPKEEP","-7, -15, true, false | 20, 40, false, false","STRUCTURE, REACTOR","EMP_DAMAGE_TAKEN, OVERLOAD_DURATION, CRITICAL_MALFUNCTIONS","-20, -30, true, false | -15, -25, false, false | -20, -30, false, false",,,,,,,,,,,,
+vt_reactorBoostS,"Tritachyon, HCoK",Small Reactor Booster,"Grants a ==small== boost to the ships reactor, improving ==flux storage== and ==flux dissipation==.",80,REACTOR,"FLUX_CAPACITY, FLUX_DISSIPATION","5, 10, true, false | 5, 10, true, false",,,,,,,vt_reactorOverdrive,,,,,,,,
+vt_reactorBoostM,"Tritachyon, HCoK",Medium Reactor Booster,"Grants a ==medium== boost to the ships reactor, improving ==flux storage== and ==flux dissipation==.",45,REACTOR,"FLUX_CAPACITY, FLUX_DISSIPATION","7.5, 12.5, true, false | 7.5, 12.5, true, false",,,,,,,vt_reactorOverdrive,,,,,,,,
+vt_reactorBoostL,"Tritachyon, HCoK",Large Reactor Booster,"Grants a ==large== boost to the ships reactor, improving ==flux storage== and ==flux dissipation==.",20,REACTOR,"FLUX_CAPACITY, FLUX_DISSIPATION","10, 15, true, false | 10, 15, true, false",,,,,,,vt_reactorOverdrive,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+"# NOTES:
+A list of all Slot-Types, StatMods and Qualities can be found in VoidTec\help\DataTypes.txt",,,,,,,,,,,,,,,,,,,,,,
+# Unique ID (use a prefix)  - Required,"# Manufacturer - Required
+Can be a faction or custom entry.
+Will color the entry in faction-, designType- or playercolor",# Displayed name of the Augment  - Required,# Description,"# Rarity  - Required
+100 highest spawn chance
+1 lowest spawn chance",# Primary slot  - Required,"# Primary stat modifiers
+MOD1, MOD2, MOD3...","# Values used for each primary stat
+needs to be grouped as follow:
+minValueInt, maxValueInt, modifiedByQualityBoolean, invertModifier | minValueInt, maxValueInt, modifiedByQualityBoolean, invertModifier | ...","# Secondary slots
+Can be more than one
+SLOT1, SLOT2, SLOT3, ...","# Secondary stat modifiers
+MOD1, MOD2, MOD3, ...","# Values used for each secondary stat
+needs to be grouped as follow:
+minValueInt, maxValueInt, modifiedByQualityBoolean, invertModifier | minValueInt, maxValueInt, modifiedByQualityBoolean, invertModifier | ...",# each slot category can only house a single unique mod,"# Allowed qualities which can be rolled
+MIN_QUALITY, MAX_QUALITY
+ONLY_QUALITY","# If true, will pick a random quality and ignore its weighting",,"# Faction IDs which are allowed to use them. If empty, everyone will get access to it",# Faction IDs which are not allowed to generate this augment,"#
+civilianOnly = will only generate on civilian ships
+militaryOnly = will only generate on military ships",# Description which gets added after the listed augment stats,"# Path to the script which fires before ship creation.
+Needs to implement de.schafunschaf.voidtec.combat.vesai.BeforeCreationEffect","# Path to the script which fires after ship creation.
+Needs to implement de.schafunschaf.voidtec.combat.vesai.AfterCreationEffect","# Path to the script which runs every frame in combat.
+Needs to implement de.schafunschaf.voidtec.combat.vesai.CombatScriptRunner","# Path to script which gets fired when right-clicking an augment in your cargo.
+Needs to implement de.schafunschaf.voidtec.combat.vesai.RightClickAction"

@@ -1,0 +1,4 @@
+{
+    # Invasion stuff
+    "legacyInvasions": true,	# old invasion system before v0.10.3 revamp (if I haven't released v0.10.3 yet, this is a beta feature)
+}

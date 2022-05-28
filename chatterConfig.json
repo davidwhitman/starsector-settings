@@ -1,0 +1,4 @@
+{
+	"lowImportanceChatter":false,	# false makes most low-priority messages appear as floating text instead of in message field
+	"fleetIntro":false,	# intro splash for some fleet types, Project Wingman style
+}

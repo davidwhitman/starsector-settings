@@ -1,0 +1,22 @@
+{
+    "maxRelationships":{
+		"default":1
+	},
+    "startRelationships":{
+			"default":0.5,
+    		"hegemony":0.3,
+			"luddic_church":0.3,
+    		"luddic_path":0.3,
+			"tritachyon":1.0,
+			"persean":1.0,
+			"sindrian_diktat":0.2,
+			"interstellarimperium":1.0,
+			"mayasura":1.0,
+			"shadow_industry":0.8,
+			"ORA":1.0,	
+			"neutrinocorp":1.0,
+    		"mayorate":0.8, 	
+			"diableavionics":0.8, 
+			"communist_clouds":-0.3, 
+			}
+}

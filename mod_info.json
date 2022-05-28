@@ -1,0 +1,9 @@
+{
+	"id":"wisp_settings",
+	"name":"Wisp's Custom Settings",
+    "utility": "true",
+	"author":"Wisp",
+	"version":"0.95.1a",
+	"description":"",
+	"gameVersion":"0.95.1a-RC6"
+}
