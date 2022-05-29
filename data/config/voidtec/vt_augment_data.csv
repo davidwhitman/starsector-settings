@@ -10,6 +10,7 @@ vt_modulatingShield,"Tritachyon, HCoK",Modulating Shield Emitters,Reduces the ov
 vt_reactorBoostS,"Tritachyon, HCoK",Small Reactor Booster,"Grants a ==small== boost to the ships reactor, improving ==flux storage== and ==flux dissipation==.",80,REACTOR,"FLUX_CAPACITY, FLUX_DISSIPATION","5, 10, true, false | 5, 10, true, false",,,,,,,vt_reactorOverdrive,,,,,,,,
 vt_reactorBoostM,"Tritachyon, HCoK",Medium Reactor Booster,"Grants a ==medium== boost to the ships reactor, improving ==flux storage== and ==flux dissipation==.",45,REACTOR,"FLUX_CAPACITY, FLUX_DISSIPATION","7.5, 12.5, true, false | 7.5, 12.5, true, false",,,,,,,vt_reactorOverdrive,,,,,,,,
 vt_reactorBoostL,"Tritachyon, HCoK",Large Reactor Booster,"Grants a ==large== boost to the ships reactor, improving ==flux storage== and ==flux dissipation==.",20,REACTOR,"FLUX_CAPACITY, FLUX_DISSIPATION","10, 15, true, false | 10, 15, true, false",,,,,,,vt_reactorOverdrive,,,,,,,,
+vt_wsp_largerClips,Pirates,Oversize Munitions Containers,Increases the ==ammo capacity== or the ==number of charges== for ballistic and energy weapons by carving out space in the hull.,30,WEAPON,"AMMO_BONUS, HULL_HEALTH","30, 40, true, false | -5, -10, true, true",,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,
 "# NOTES:
 A list of all Slot-Types, StatMods and Qualities can be found in VoidTec\help\DataTypes.txt",,,,,,,,,,,,,,,,,,,,,,
